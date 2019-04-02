@@ -1,0 +1,17 @@
+{
+  "name": "aprender-ingles-com-musica",
+  "version": "1.0.0",
+  "description": "Projeto que ajuda a desenvolver algumas habilidades em ingles utilizando letras de músicas famosas",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alexandre",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.19"
+  }
+}

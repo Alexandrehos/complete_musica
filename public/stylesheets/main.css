@@ -1,0 +1,50 @@
+p {
+    margin:0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 5rem;
+    text-align: center;
+}
+
+h5{
+    text-align: center;
+    color: grey;
+    margin-bottom: 2em;
+    font-size: 2rem;
+}
+
+@keyframes acertado {
+  0% {background-color: rgba(255,0,0,0.3);}
+  30% {background-color: rgba(0,255,0,0.5);}
+  100%{background-color: transparent;}
+}
+
+.acertou{
+    background-color: transparent;
+    transition: 0.3s;
+    animation-name: acertado;
+    animation-duration: 1s;
+}
+
+.errado{
+    background-color: rgba(255,0,0,0.3);
+    transition: 0.3s;
+}
+
+.paragrafo{
+    margin-bottom: 1em;
+}
+
+input{
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    text-align: center;
+    border-radius: 4px;
+}
+
+body {
+    font-size: 2rem;
+}

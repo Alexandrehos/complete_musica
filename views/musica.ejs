@@ -1,0 +1,31 @@
+<% include partials/header %>
+
+<h1><%=musica.name%></h1>
+<h5><%=musica.artist%></h5>
+<button id="reset">Clear all</button>
+<button id="solution">Solution</button>
+<% LetraOrig = musica.letraIng %>
+    <% for(var i = 0; i < LetraOrig.length; i++){ %>
+            <p>
+                <% for(var a = 0; a < LetraOrig[i].length; a++){ %>
+                    <% if(LetraOrig[i][a][1]==1){ %>
+                        <input 
+                            id="<%=LetraOrig[i][a][0]%>"
+                            type="text" class="errado"
+                            onkeyup='acertou("<%=LetraOrig[i][a][0]%>")'
+                            size="<%=LetraOrig[i][a][0].length-2%>"
+                        >
+                    <% } else if(LetraOrig[i][a][0]==''){ %>
+                        </p><p class="paragrafo"></p><p>
+                    <% } else { %>
+                        <%=LetraOrig[i][a][0]%>
+                    <% } %>
+                <% } %>
+            </p>
+    <% } %>
+
+
+
+<script type="text/javascript" src="/javascript/musicaAtual.js"></script>
+
+<% include partials/footer %>

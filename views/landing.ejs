@@ -1,0 +1,12 @@
+<% include partials/header %>
+
+<h1>Escolha uma musica:</h1>
+
+
+<% musicas.forEach(function(musica){ %>
+    <p>
+        <a href="/musica/<%= musica._id %>"><%= musica.name%> - <%= musica.artist%></a>
+    </p>
+<% }); %>
+
+<% include partials/footer %>
